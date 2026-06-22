@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Godson Morais — Python Django Developer</title>
+    {% load static %}
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span class="brand-bracket">&lt;</span>GM<span class="brand-bracket">/&gt;</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#connect">Connect</a></li>
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-outline-cyan btn-sm" href="https://linkedin.com/in/godson-morais" target="_blank">Hire Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="container hero-content">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-8 col-xl-7">
+                <p class="hero-eyebrow">
+                    <span class="eyebrow-dot"></span> Available for opportunities
+                </p>
+                <h1 class="hero-name">Godson<br><span class="name-accent">Morais</span></h1>
+                <div class="terminal-line">
+                    <span class="terminal-prompt">$ </span>
+                    <span id="typewriter" class="terminal-text"></span><span class="cursor">▌</span>
+                </div>
+                <p class="hero-bio">
+                    Python Django developer from Trivandrum, Kerala — building backend systems,
+                    REST APIs, and data-driven web applications that actually work in production.
+                </p>
+                <div class="hero-cta d-flex flex-wrap gap-3 mt-4">
+                    <a href="#projects" class="btn btn-cyan">View Projects <i class="bi bi-arrow-right ms-1"></i></a>
+                    <a href="#connect" class="btn btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-socials mt-5 d-flex gap-3">
+                    <a href="https://github.com/godson-morais" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/godson-morais" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/godson_mj" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-5 d-none d-lg-flex justify-content-end">
+                <div class="hero-card-stack">
+                    <div class="floating-card card-1">
+                        <span class="fc-icon"><i class="bi bi-braces"></i></span>
+                        <span class="fc-text">Django REST<br><small>API Design</small></span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <span class="fc-icon"><i class="bi bi-database"></i></span>
+                        <span class="fc-text">MySQL<br><small>Database Design</small></span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <span class="fc-icon"><i class="bi bi-file-earmark-spreadsheet"></i></span>
+                        <span class="fc-text">Excel → Reports<br><small>Data Processing</small></span>
+                    </div>
+                    <div class="avatar-circle">
+                        <span>GM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about" class="section-pad">
+    <div class="container">
+        <div class="row gy-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="about-code-block">
+                    <div class="code-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="code-filename">about_me.py</span>
+                    </div>
+                    <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Godson</span>:
+    name = <span class="str">"Godson Morais"</span>
+    role = <span class="str">"Python Django Developer"</span>
+    location = <span class="str">"Trivandrum, Kerala 🇮🇳"</span>
+    education = <span class="str">"BSc Computer Science"</span>
+    college = <span class="str">"Emmanuel College, Kerala"</span>
+
+    stack = [
+        <span class="str">"Python"</span>, <span class="str">"Django"</span>,
+        <span class="str">"Django REST Framework"</span>,
+        <span class="str">"MySQL"</span>, <span class="str">"React"</span>,
+    ]
+
+    <span class="kw">def</span> <span class="fn">say_hi</span>(self):
+        <span class="kw">return</span> <span class="str">"Let's build something great!"</span></code></pre>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-label">ABOUT</div>
+                <h2 class="section-title">Backend dev with a<br><span class="text-cyan">product mindset</span></h2>
+                <p class="section-body">
+                    I'm a Python Django developer with hands-on internship experience building real-world applications —
+                    from LMS platforms with payment integrations to Excel-to-database data pipelines.
+                </p>
+                <p class="section-body">
+                    I hold a BSc in Computer Science from Emmanuel College, Kerala, and have spent my internships at
+                    Luminar Technolab and Geosys IT Solution working on production systems, REST APIs, ORM optimization,
+                    and secure deployment practices.
+                </p>
+                <div class="about-stats row g-3 mt-3">
+                    <div class="col-4">
+                        <div class="stat-card">
+                            <div class="stat-num">2+</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-card">
+                            <div class="stat-num">1+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="stat-card">
+                            <div class="stat-num">2</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills" class="section-pad section-dark">
+    <div class="container">
+        <div class="section-label text-center">SKILLS</div>
+        <h2 class="section-title text-center mb-5">What I work with</h2>
+
+        <div class="row g-4">
+            {% for category, items in skills.items %}
+            <div class="col-sm-6 col-lg-3">
+                <div class="skill-card reveal-card">
+                    <div class="skill-card-icon">
+                        {% if category == "Languages" %}<i class="bi bi-code-slash"></i>
+                        {% elif category == "Frameworks" %}<i class="bi bi-boxes"></i>
+                        {% elif category == "Databases" %}<i class="bi bi-database-fill"></i>
+                        {% else %}<i class="bi bi-tools"></i>{% endif %}
+                    </div>
+                    <h5 class="skill-cat">{{ category }}</h5>
+                    <div class="skill-tags">
+                        {% for item in items %}
+                        <span class="skill-tag">{{ item }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience" class="section-pad">
+    <div class="container">
+        <div class="section-label">EXPERIENCE</div>
+        <h2 class="section-title mb-5">Where I've worked</h2>
+
+        <div class="timeline">
+            {% for exp in experience %}
+            <div class="timeline-item reveal-card">
+                <div class="timeline-marker {% if exp.current %}marker-active{% endif %}"></div>
+                <div class="timeline-body">
+                    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-1">
+                        <div>
+                            <h4 class="exp-title">{{ exp.title }}</h4>
+                            <p class="exp-company">
+                                <i class="bi bi-building me-1"></i>{{ exp.company }}
+                                <span class="exp-location ms-2"><i class="bi bi-geo-alt me-1"></i>{{ exp.location }}</span>
+                            </p>
+                        </div>
+                        <span class="exp-badge {% if exp.current %}badge-active{% endif %}">
+                            {% if exp.current %}<span class="pulse-dot"></span>{% endif %}
+                            {{ exp.period }}
+                        </span>
+                    </div>
+                    <ul class="exp-points">
+                        {% for point in exp.points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects" class="section-pad section-dark">
+    <div class="container">
+        <div class="section-label">PROJECTS</div>
+        <h2 class="section-title mb-5">What I've built</h2>
+
+        <div class="row g-4">
+            {% for project in projects %}
+            <div class="col-lg-8 mx-auto">
+                <div class="project-card reveal-card">
+                    <div class="project-header">
+                        <div class="project-folder"><i class="bi bi-folder2-open"></i></div>
+                        <div class="project-links">
+                            <a href="{{ project.github }}" target="_blank" class="project-link" title="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">{{ project.name }}</h3>
+                    <p class="project-sub">{{ project.subtitle }} &nbsp;·&nbsp; {{ project.period }}</p>
+                    <ul class="project-points">
+                        {% for point in project.points %}
+                        <li>{{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                    <div class="project-tech">
+                        {% for tech in project.tech %}
+                        <span class="tech-tag">{{ tech }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- Placeholder card -->
+            <div class="col-lg-8 mx-auto">
+                <div class="project-card project-placeholder reveal-card">
+                    <div class="placeholder-inner">
+                        <i class="bi bi-plus-circle"></i>
+                        <p>More projects coming soon…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── CERTIFICATIONS ── -->
+<section id="certifications" class="section-pad">
+    <div class="container">
+        <div class="section-label text-center">CERTIFICATIONS</div>
+        <h2 class="section-title text-center mb-5">Credentials</h2>
+        <div class="row g-4 justify-content-center">
+            {% for cert in certifications %}
+            <div class="col-md-6 col-lg-5">
+                <div class="cert-card reveal-card">
+                    <div class="cert-icon"><i class="bi bi-award-fill"></i></div>
+                    <p class="cert-text">{{ cert }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ── CONNECT ── -->
+<section id="connect" class="section-pad section-dark">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-lg-6">
+                <div class="section-label">CONNECT</div>
+                <h2 class="section-title">Find me online</h2>
+                <p class="section-body mx-auto mb-5">
+                    I'm always open to new opportunities and collaborations.
+                    Reach out on any of these platforms.
+                </p>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-sm-6 col-md-4">
+                <a href="https://linkedin.com/in/godson-morais" target="_blank" class="social-card sc-linkedin reveal-card">
+                    <div class="sc-icon"><i class="bi bi-linkedin"></i></div>
+                    <div class="sc-label">LinkedIn</div>
+                    <div class="sc-handle">godson-morais</div>
+                    <span class="sc-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a href="https://instagram.com/godson_morais" target="_blank" class="social-card sc-instagram reveal-card">
+                    <div class="sc-icon"><i class="bi bi-instagram"></i></div>
+                    <div class="sc-label">Instagram</div>
+                    <div class="sc-handle">godson_morais</div>
+                    <span class="sc-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a href="https://github.com/godson-morais" target="_blank" class="social-card sc-github reveal-card">
+                    <div class="sc-icon"><i class="bi bi-github"></i></div>
+                    <div class="sc-label">GitHub</div>
+                    <div class="sc-handle">godson-morais</div>
+                    <span class="sc-arrow"><i class="bi bi-arrow-up-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+    <div class="container text-center">
+        <p class="footer-brand"><span class="brand-bracket">&lt;</span>GM<span class="brand-bracket">/&gt;</span></p>
+        <p class="footer-text">Built with Python, Django & Bootstrap · Godson Morais © 2026</p>
+        <div class="footer-socials d-flex justify-content-center gap-3 mt-3">
+            <a href="https://github.com/godson-morais" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/godson-morais" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://instagram.com/godson_morais" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
